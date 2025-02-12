@@ -11,7 +11,7 @@
 import { json } from '@sveltejs/kit';
 
 export async function GET({ fetch }) {
-    const response = await fetch('https://sk-api-flax.vercel.app/src/lib/server/my-data.json');
+    const response = await fetch('/src/lib/server/my-data.json');
 
     if (!response.ok) {
         throw new Error('Failed to fetch company details');
